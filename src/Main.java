@@ -4,7 +4,7 @@ public class Main {
         Voiture bryan = new Voiture("Bryan","Penetrator");
         try{
             System.out.println(liva.ajouterVehicule(bryan));
-            Vehicule remove = liva.retirerVehicule("A0");
+            Vehicule remove = liva.retirerVehicule("A1");
         }
         catch (RuntimeException ex){
             System.out.println( ex.getMessage() );

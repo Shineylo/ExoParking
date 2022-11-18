@@ -3,14 +3,9 @@ import java.util.HashMap;
 public class Parking<V> {
     private int nbrPlace;
     private HashMap<Integer,V> batiment = new HashMap<Integer,V>();
-    private V contenu;
+    private static final int nbrPlaceMaxEtage = 20;
+    private static final int nbrPlaceMax = 26 * nbrPlaceMaxEtage;
 
-    private final int nbrPlaceMaxEtage = 20;
-    private final int nbrPlaceMax = 26 * nbrPlaceMaxEtage;
-
-    public void setContenu(V contenu){
-        this.contenu = contenu;
-    }
 
     public String ajouterVehicule(V vehicule){
         for (int i = 0; i<this.nbrPlaceMax;i++){
